@@ -1,0 +1,2 @@
+class Categorydeal < ApplicationRecord
+end
