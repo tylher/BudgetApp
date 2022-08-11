@@ -13,14 +13,19 @@ module.exports = {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         poppins: "Poppins",
         proximalight: "Proxima Nova Lt",
-        proximabolditalic: "Proxima Nova Rg",
+        proximabold: "Proxima Nova Rg",
       },
       colors: {
-        'main': {
-          300: '#3778c2'
+        text: {
+          500: "#434b54",
+          300: "#aab2bb",
+          200: "#c6ccd2",
         },
-        'secondary': '#5fb523'
-      }
+        main: {
+          300: "#3778c2",
+        },
+        secondary: "#5fb523",
+      },
     },
   },
   plugins: [

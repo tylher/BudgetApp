@@ -3,7 +3,8 @@ class DealsController < ApplicationController
 
   # GET /deals or /deals.json
   def index
-    @deals = Deal.all
+    @category = Category.find(params[:category_id])
+    @deals = @category.deals
   end
 
   # GET /deals/1 or /deals/1.json
