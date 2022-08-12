@@ -2,7 +2,9 @@
 <section class="flex justify-between items-center">
   <div class="flex items-center gap-5 sm:gap-20  ">
     <div class="inline-block w-24 h-24 lg:w-36 lg:h-36">
-        <img class="w-full h-full rounded-full" src=<%= category.icon%> >
+        <% if category.icon.attached? %>
+            <%= image_tag category.icon, class:"w-full h-full rounded-full" %>
+        <% end %>
     </div>
     <p class="font-proximalight text-2xl text-text-300">
       <%= category.name %>

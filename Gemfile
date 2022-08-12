@@ -77,3 +77,4 @@ end
 gem 'devise'
 gem 'cancancan'
 gem 'carrierwave'
+gem 'aws-sdk-s3'
