@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         text: {
           500: "#434b54",
+          400: "#808b99",
           300: "#aab2bb",
           200: "#c6ccd2",
         },

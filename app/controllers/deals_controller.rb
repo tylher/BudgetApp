@@ -4,7 +4,7 @@ class DealsController < ApplicationController
   # GET /deals or /deals.json
   def index
     @category = Category.find(params[:category_id])
-    @deals = @category.deals
+    @deals = @category.deals.order(created_at: :desc)
   end
 
   # GET /deals/1 or /deals/1.json
@@ -31,7 +31,7 @@ class DealsController < ApplicationController
     respond_to do |format|
       if @deal.save
          params[:deal][:category_ids].each{|id| CategoryDeal.create(deal_id:@deal.id,category_id: id.to_i)unless id==""}
-        format.html { redirect_to deal_url(@deal), notice: "Deal was successfully created." }
+        format.html { redirect_to deals_path(category_id: params[:category_id]), notice: "Deal was successfully created." }
         format.json { render :show, status: :created, location: @deal }
       else
         format.html { render :new, status: :unprocessable_entity }

@@ -1,14 +1,16 @@
 <div class="w-full">
+  
+  <%= render partial:"shared/navbar", locals:{page: 'TRANSACTIONS'} %>
+  <div class="flex justify-between sm:px-20 md:px-36 bg-white shadow-xl font-proximabold p-5 text-text-500" >
+    <p class="text-4xl font-medium text-text-400"><%= @category.name%></p>
+    <p class="text-3xl font-bold">$<%= @category.deals.sum(:amount)%></p>
+  </div>
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
 
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Deals</h1>
-    <%= link_to 'New deal', new_deal_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
-  </div>
-
-  <div id="deals" class="min-w-full">
+  <div id="deals" class="min-w-full px-4 py-5 sm:px-24 md:px-48 ">
     <%= render @deals %>
+    <%= link_to 'New deal', new_category_deal_path(category_id: params[:category_id]), class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block mt-5 font-medium" %>
   </div>
 </div>
