@@ -13,9 +13,11 @@
  *= require_tree .
  *= require_self
  */
- /*
+
+/*
  *= require font-awesome
  */
+
 /* direct_uploads.css */
 
 .direct-upload {

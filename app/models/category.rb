@@ -5,5 +5,5 @@ class Category < ApplicationRecord
   # validates :icon, presence: true
   # mount_uploader :icon, IconUploader
   has_one_attached :icon
-  belongs_to :author, class_name: "User", foreign_key: "author_id"
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
 end
