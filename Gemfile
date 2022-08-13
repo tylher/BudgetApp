@@ -78,3 +78,4 @@ gem 'aws-sdk-s3'
 gem 'cancancan'
 gem 'carrierwave'
 gem 'devise'
+gem "font-awesome-rails"

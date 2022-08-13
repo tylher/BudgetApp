@@ -1,6 +1,6 @@
 <div class="w-full">
   
-  <%= render partial:"shared/navbar", locals:{page: 'TRANSACTIONS'} %>
+  <%= render partial:"shared/navbar", locals:{page: 'TRANSACTIONS', path: categories_path} %>
   <div class="flex justify-between sm:px-20 md:px-36 bg-white shadow-xl font-proximabold p-5 text-text-500" >
     <p class="text-4xl font-medium text-text-400"><%= @category.name%></p>
     <p class="text-3xl font-bold">$<%= @category.deals.sum(:amount)%></p>

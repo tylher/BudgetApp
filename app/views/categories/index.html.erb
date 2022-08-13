@@ -2,7 +2,7 @@
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
-  <%= render partial:"shared/navbar", locals:{page: 'CATEGORIES'} %>
+  <%= render partial:"shared/navbar", locals:{page: 'CATEGORIES', path: app_path} %>
 
   <div id="categories" class="min-w-full px-6 py-10 sm:px-20 md:px-32">
     <%= render @categories %>
