@@ -131,6 +131,7 @@ GEM
     ffi (1.15.5-x64-mingw-ucrt)
     font-awesome-rails (4.7.0.8)
       railties (>= 3.2, < 8.0)
+    foreman (0.87.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -304,6 +305,7 @@ DEPENDENCIES
   debug
   devise
   font-awesome-rails
+  foreman
   importmap-rails
   jbuilder
   pg (~> 1.1)

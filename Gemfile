@@ -82,7 +82,13 @@ group :test do
 end
 
 gem 'aws-sdk-s3'
+
 gem 'cancancan'
+
 gem 'carrierwave'
+
 gem 'font-awesome-rails'
+
 gem 'devise'
+
+gem 'foreman'
