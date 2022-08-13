@@ -1,0 +1,10 @@
+<header class="flex flex-row items-center justify-evenly bg-main-300 lg:p-5 p-5 w-full ">
+    <%= link_to path do%>
+    <%= fa_icon "chevron-left lg", class:"text-white " %>
+    <%end%>
+    <h1 class="text-xl  sm:text-4xl text-white font-proximalight"><%= page %></h1>
+    <% if user_signed_in? %>
+      <%= link_to "Log out", destroy_user_session_path, 
+        class: 'text-xl sm:text-4xl text-white font-proximalight', data: { turbo_method: :delete } %>
+      <% end %>
+</header>

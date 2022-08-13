@@ -1,0 +1,24 @@
+<div id="<%= dom_id category %>" class="flex flex-col shadow-lg gap-3 bg-white py-2 px-5 text-text w-full">
+<section class="flex justify-between items-center">
+  <div class="flex items-center gap-5 sm:gap-20  ">
+    <div class="inline-block w-24 h-24 lg:w-36 lg:h-36">
+        <% if category.icon.attached? %>
+            <%= image_tag category.icon, class:"w-full h-full rounded-full" %>
+        <% end %>
+    </div>
+    <p class="font-proximalight text-2xl text-text-300">
+      <%= category.name %>
+    </p>
+  </div>
+  <p class="font-proximalight text-2xl md:mr-10">
+    $ <%= category.deals.sum(:amount) %>
+  </p>
+</section>
+
+  <% if action_name != "show" %>
+  <div class="flex gap-2 sm:gap-7">
+    <%= link_to "Show this category", deals_path(category_id: category.id), class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit', edit_category_path(category), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
+  <% end %>
+</div>
