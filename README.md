@@ -83,3 +83,7 @@ $ rspec
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+## Acknowledgments
+- Design and inspiration by [Gregoire Vella on Behance.](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
+- Hat tip to anyone whose code was used
