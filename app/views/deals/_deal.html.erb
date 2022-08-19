@@ -17,7 +17,6 @@
   <% if action_name != "show" %>
   <div class="flex gap-2 sm:gap-7">
     <%= button_to 'Remove', category_deal_path(id:deal.id, category_id: params[:category_id]), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit', edit_deal_path(deal), class: "rounded-lg py-3 mt-2 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
   <% end %>
 </div>
