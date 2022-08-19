@@ -21,7 +21,7 @@ class DealsController < ApplicationController
 
   # POST /deals or /deals.json
   def create
-    @categories = Category.all
+    @categories = Category.where(author: current_user)
     @deal = Deal.new(deal_params)
     @deal.author_id = current_user.id
     respond_to do |format|
