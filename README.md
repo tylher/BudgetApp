@@ -7,6 +7,12 @@ This id a Ruby on Rails application that allows the users to:
 - introduce new transactions associated with a category.
 - see the money spent on each category.
 
+## Live Demo
+checkout the app [here](https://thawing-earth-92046.herokuapp.com) 
+
+## Video Presentation
+Watch the video presentation [here](https://www.loom.com/share/2bb894aff8194acc98da5b6e46f9d691)
+
 ## Built With
 
 - Technologies used:
