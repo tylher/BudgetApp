@@ -1,11 +1,11 @@
 ## Budget App
-The Ruby on Rails capstone project (remember what they are?) is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+This is a web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spend and on what.
 
-This id a Ruby on Rails application that allows the users to:
+This is a Ruby on Rails application that allows the users to:
 
 - register and log in, so that the data is private to them.
-- introduce new transactions associated with a category.
-- see the money spent on each category.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
 
 ## Live Demo
 checkout the app [here](https://thawing-earth-92046.herokuapp.com) 
@@ -19,7 +19,7 @@ Watch the video presentation [here](https://www.loom.com/share/2bb894aff8194acc9
   > Ruby
   > Rails
   > Tailwindcss
-  > postgresql
+  > PostgreSQL
 
 
 ## Getting Started
@@ -55,7 +55,7 @@ To run the server:
 ```
 $ rails s
 ```
-To watch css changes
+To watch CSS changes
 
 ```
 $ rails tailwindcss:watch
